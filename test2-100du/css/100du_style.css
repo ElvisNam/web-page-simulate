@@ -420,29 +420,36 @@ img {
 }
 #layout-content .tab .tab_list {
 	width: 350px;
-	height: 33px;
+	height: 34px;
 	font-size: 0;
 }
 #layout-content .tab .tab_list li {
-	width: 153px;
-	height: 12px;
+	width: 172px;
+	height: 33px;
 	margin-right: 2px;
-	padding: 11px 0 9px 19px;
 	border: 1px solid #e5e5e5;
 	border-bottom: none;
-	font-size: 14px;
-	line-height: 14px;
-	font-family: "Microsoft Yahei";
-	color: #000;
 	display: inline-block;
 	border-radius: 6px 6px 0 0;
 	cursor: pointer;
-	position: relative;
+	overflow: hidden;
+}
+#layout-content .tab .tab_list li div {
+	width: 153px;
+	height: 12px;
+	margin-right: 2px;
+	padding: 11px 0 10px 19px;
+	font-size: 14px;
+	line-height: 1;
+	font-family: "Microsoft Yahei";
+	color: #000;
+	border-radius: 6px 6px 0 0;
+	position: absolute;
 }
 #layout-content .tab .tab_list .active {
 	height: 13px;
 	width: 150px;
-	padding: 11px 0 9px 22px;
+	padding: 12px 0 9px 22px;
 	background-color: #fff;
 }
 #layout-content .tab .tab_list li > span {
@@ -757,6 +764,9 @@ img {
 	margin-bottom: 15px;
 	background: url("../images/recom_bg.png") no-repeat 0 -58px;
 }
+#layout-content .recom > .list li:nth-of-type(2n) {
+	background-position: 0 -70px;
+}
 #layout-content .recom > .list .con {
 	width: 194px;
 	margin-left: 6px;
@@ -764,10 +774,11 @@ img {
 	font-family: "Microsoft Yahei";
 	color: #454545;
 	display: inline-block;
-	white-space: nowrap;
+	/*white-space: nowrap;
 	overflow: hidden;
-	text-overflow: ellipsis;
+	text-overflow: ellipsis;*/
 }
+/* overflow: hidden; 被设置后下划线无法出现 */
 #layout-content .recom > .list .con:hover {
 	text-decoration: underline;
 }
@@ -775,11 +786,162 @@ img {
 	color: #999;
 	float: right;
 }
+#layout-content .address .content {
+	height: 294px;
+}
 
+#layout-content .bbs {
+	height: 328px;
+}
+#layout-content .bbs h3 {
+	height: 40px;
+	font-size: 11px;
+	line-height: 40px;
+	color: #010000;
+	font-family: "Microsoft Yahei";
+	position: relative;
+}
+#layout-content .bbs h3 a {
+	float: right;
+}
+#layout-content .bbs h3 span {
+	margin-right: 5px;
+	color: #cc0d13;
+}
+#layout-content .bbs .list li {
+	height: 30px;
+	margin-bottom: 3px;
+	padding: 0 22px 0 10px;
+	font-size: 11px;
+	font-family: "Microsoft Yahei";
+	line-height: 30px;
+	background-color: #f1f1f1;
+	border-radius: 4px;
+	cursor: pointer;
+}
+#layout-content .bbs .list li img, #layout-content .bbs .list li .name, #layout-content .bbs .list li .num {
+	display: none;
+}
+#layout-content .bbs .list li strong {
+	margin-right: 21px;
+	color: #d80000;
+}
+#layout-content .bbs .list li .right {
+	color: #666666;
+	float: right;
+}
 
+#layout-content .bbs .list .active {
+	height: 60px;
+	background-color: #d90000;
+	padding: 10px 5px 0 10px;
+	font-family: "Microsoft Yahei";
+	position: relative;
+}
+#layout-content .bbs .list .active strong, #layout-content .bbs .list .active .right {
+	display: none;
+}
+#layout-content .bbs .list .active img {
+	display: inline-block;
+} 
+#layout-content .bbs .list .active .con {
+	margin-left: 10px;
+	margin-top: 6px;
+	font-size: 14px;
+	font-weight: bold;
+	color: #fff;
+	line-height: 1;
+	position: absolute;
+}
+#layout-content .bbs .list .active .name {
+	margin-left: 10px;
+	margin-top: 32px;
+	font-size: 11px;
+	line-height: 1;
+	color: #fff;
+	position: absolute;
+	display: inline-block;
+}
+#layout-content .bbs .list .active .num {
+	font-size: 26px;
+	font-weight: bold;
+	font-family: "Microsoft Yahei";
+	line-height: 1;
+	color: #fff;
+	position: absolute;
+	right: 4px;
+	bottom: -5px;
+	display: inline-block;
+}
 
+#layout-content .advice {
+	height: 298px;
+}
+#layout-content .advice h3 {
+	height: 40px;
+	font-size: 12px;
+	font-family: "Microsoft Yahei";
+	line-height: 40px;
+	color: #010000;
+	position: relative;
+}
+#layout-content .advice h3 span {
+	color: #cc0d13;
+	margin-right: 5px;
+}
+#layout-content .advice h3 a {
+	right: 0;
+	top: 0;
+	position: absolute;
+}
 
-
+#layout-content .advice .tab2 {
+	width: 318px;
+}
+#layout-content .advice .tab2 .list {
+	font-size: 0;
+	padding: 0 10px 0 10px;
+}
+#layout-content .advice .tab2 .list li {
+	height: 24px;
+	width: 98px;
+	border: 1px solid #e3e3e3;
+	border-right: none;
+	border-bottom: none;
+	display: inline-block;
+	overflow: hidden;
+	border-radius: 4px 4px 0 0;
+}
+#layout-content .advice .tab2 .list li:last-of-type {
+	border-right: 1px solid #e3e3e3;
+}
+#layout-content .advice .tab2 .list div {
+	padding: 5px 0 7px 24px;
+	font-size: 11px;
+	line-height: 1;
+	font-family: "Microsoft Yahei";
+	color: #666;
+}
+#layout-content .advice .tab2 .list .trangle {
+	border-top: 4px solid #c1c1c1;
+	margin-left: 8px;
+	margin-top: 4px;
+}
+#layout-content .advice .tab2 .list .active {
+	width: 74px;
+	margin-top: 1px;
+	padding-bottom: 8px;
+	color: #454545;
+	font-weight: bold;
+	background-color: #fff;
+	position: absolute;
+}
+#layout-content .advice .tab2 .active .trangle {
+	border-top-color: #ca0309;
+}
+#layout-content .advice .tab2 .cont {
+	border-top: 1px solid #dadada;
+}
 
 
 
