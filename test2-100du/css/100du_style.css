@@ -1,10 +1,10 @@
 /* CSS DOCUMENT OF 100DU */
 
 /* 重置 */
-body, div, nav, header, footer, ul, li, aside, p, h3 {
+body, div, nav, header, footer, ul, ol, li, aside, p, h3, h4 {
 	margin: 0;
 }
-ul, li {
+ul, ol, li {
 	padding: 0;
 }
 li {
@@ -564,6 +564,7 @@ img {
 	padding-top: 7px;
 	padding-bottom: 24px;
 	background: url("../images/activity_bg.png") no-repeat 269px 0;
+	height: 467px;
 }
 #layout-content .title {
 	padding-left: 9px;
@@ -595,7 +596,7 @@ img {
 }
 #layout-content .activity .cont {
 	height: 403px;
-	padding: 16px 10px 0 8px;
+	padding: 16px 0 0 8px;
 	background: url("../images/acti_cont_bg.png") no-repeat;
 }
 #layout-content .activity .intro {
@@ -615,5 +616,180 @@ img {
 	background: url("../images/acti_cont_bg.png") no-repeat -319px 0;
 }
 #layout-content .activity .intro .right {
+	width: 204px;
+	height: 84px;
+	float: right;
+}
+#layout-content .activity .mon,  #layout-content .activity .day{
+	width: 26px;
+	height: 25px;
+	margin-right: 3px;
+	font-size: 11px;
+	line-height: 25px;
+	color: #d31913;
+	text-align: center;
+	background: url("../images/acti_cont_bg.png") no-repeat -403px 0;
+	display: inline-block;
+	vertical-align: top;
+}
+#layout-content .activity .right .tit {
+	margin-left: 4px;
+	font-size: 11px;
+	font-family: "Microsoft Yahei";
+	line-height: 27px;
+	color: #333333;
+}
+#layout-content .activity .right p {
+	padding-top: 5px;
+	font-size: 11px;
+	font-family: "Microsoft Yahei";
+	line-height: 18px;
+	color: #999999;
+}
+#layout-content .activity .calendar {
+	padding-left: 2px;
+}
+#layout-content .calendar h4 {
+	width: 298px;
+	height: 34px;
+	font-size: 10px;
+	line-height: 34px;
+	font-family: "arial";
+	word-spacing: 14px;
+	text-align: center;
+	color: #333;
+}
+#layout-content .calendar ol {
+	font-size: 0;
+}
+#layout-content .calendar li {
+	width: 40px;
+	height: 40px;
+	margin-right: 3px;
+	margin-bottom: 2px;
+	font-size: 10px;
+	line-height: 40px;
+	font-family: "arial";
+	color: #6f6f6f;
+	text-align: center;
+	display: inline-block;
+	background-color: #ededed;
+}
+#layout-content .calendar .normal {
+	background-color: #f8f8f8;
+	color: #cccccc;
+}
 
+#layout-content .recom {
+	height: 486px;
+	padding-top: 12px;
+}
+#layout-content .recom .title {
+	height: 58px;
+	background: url("../images/recom_bg.png") no-repeat 104px 0;
+	background-color: #fff;
+}
+#layout-content .recom .tit1 {
+	font-size: 12px;
+	margin-top: 8px;
+}
+#layout-content .recom .tit2 {
+	margin-top: 25px;
+}
+#layout-content .grallery {
+	width: 306px;
+	height: 168px;
+	padding-top: 12px;
+	padding-left: 12px;
+	background-color: #f8f8f8;
+	border-radius: 4px;
+}
+#layout-content .grallery .img > img {
+	width: 223px;
+	height: 133px;
+	border: 1px solid #fff;
+	float: left;
+}
+#layout-content .grallery ul {
+	height: 135px;
+	width: 60px;
+	margin-left: 8px;
+	float: left;
+}
+#layout-content .grallery li {
+	width: 54px;
+	height: 30px;
+	margin-bottom: 13px;
+	border: 3px solid #fff;
+}
+#layout-content .grallery li:last-of-type {
+	margin-bottom: 0;
+}
+#layout-content .grallery .active {
+	border-color: #d6191d;
+}
+#layout-content .grallery ul img {
+	width: 54px;
+	height: 30px;
+}
+#layout-content .grallery > p {
+	margin-top: 9px;
+	margin-left: 2px;
+	font-size: 12px;
+	line-height: 1;
+	font-family: "Microsoft Yahei";
+}
+
+
+#layout-content .recom > .list {
+	margin-top: 24px;
+	padding-left: 11px;
+	padding-right: 12px;
+	font-size: 0;
+} 
+#layout-content .recom > .list li {
+	height: 12px;
+	padding-left: 21px;
+	font-size: 12px;
+	font-family: "Microsoft Yahei";
+	line-height: 1;
+	color: #dfdfdf;
+	margin-bottom: 15px;
+	background: url("../images/recom_bg.png") no-repeat 0 -58px;
+}
+#layout-content .recom > .list .con {
+	width: 194px;
+	margin-left: 6px;
+	font-size: 12px;
+	font-family: "Microsoft Yahei";
+	color: #454545;
+	display: inline-block;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+#layout-content .recom > .list .con:hover {
+	text-decoration: underline;
+}
+#layout-content .recom > .list .time {
+	color: #999;
+	float: right;
+}
+
+
+
+
+
+
+
+
+#layout-aside .asi_ad1 {
+	width: 238px;
+	height: 88px;
+	overflow: hidden;
+}
+#layout-aside .asi_ad2 {
+	width: 238px;
+	height: 178px;
+	overflow: hidden;
 }
