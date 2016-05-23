@@ -898,11 +898,11 @@ img {
 #layout-content .advice .tab2 {
 	width: 318px;
 }
-#layout-content .advice .tab2 .list {
+#layout-content .advice .tab2 > .list {
 	font-size: 0;
 	padding: 0 10px 0 10px;
 }
-#layout-content .advice .tab2 .list li {
+#layout-content .advice .tab2 > .list li {
 	height: 24px;
 	width: 98px;
 	border: 1px solid #e3e3e3;
@@ -912,22 +912,22 @@ img {
 	overflow: hidden;
 	border-radius: 4px 4px 0 0;
 }
-#layout-content .advice .tab2 .list li:last-of-type {
+#layout-content .advice .tab2 > .list li:last-of-type {
 	border-right: 1px solid #e3e3e3;
 }
-#layout-content .advice .tab2 .list div {
+#layout-content .advice .tab2 > .list div {
 	padding: 5px 0 7px 24px;
 	font-size: 11px;
 	line-height: 1;
 	font-family: "Microsoft Yahei";
 	color: #666;
 }
-#layout-content .advice .tab2 .list .trangle {
+#layout-content .advice .tab2 > .list .trangle {
 	border-top: 4px solid #c1c1c1;
 	margin-left: 8px;
 	margin-top: 4px;
 }
-#layout-content .advice .tab2 .list .active {
+#layout-content .advice .tab2 > .list .active {
 	width: 74px;
 	margin-top: 1px;
 	padding-bottom: 8px;
@@ -942,6 +942,165 @@ img {
 #layout-content .advice .tab2 .cont {
 	border-top: 1px solid #dadada;
 }
+#layout-content .advice .cont p {
+	height: 30px;
+	font-size: 12px;
+	font-family: "Microsoft Yahei";
+	color: #999999;
+	line-height: 30px;
+	border-bottom: 1px dotted #cbcbca;
+}
+#layout-content .advice .cont p .tit {
+	margin-left: 116px;
+	letter-spacing: 19px;
+}
+#layout-content .advice .cont .status {
+	margin-left: 102px;
+}
+#layout-content .advice .cont li {
+	height: 27px;
+	padding-left: 16px;
+	font-size: 12px;
+	font-family: "Microsoft Yahei";
+	color: #767676;
+	line-height: 27px;
+	border-bottom: 1px dotted #cbcbca;
+	background: url("../images/list_bg.jpg") no-repeat 6px 12px;
+	position: relative;
+}
+#layout-content .advice .cont li .tag {
+	color: #c75d61;
+}
+#layout-content .advice .cont li .tit a {
+	margin-left: 8px;
+	color: #454545;
+}
+#layout-content .advice .cont li .tit:hover a {
+	color: #d80000;
+}
+#layout-content .advice .cont li .status {
+	height: 27px;
+	width: 10px;
+	display: inline-block;
+	background: url("../images/adviece_bg.png") no-repeat 0 0;
+	position: absolute;
+	right: 21px;
+}
+#layout-content .advice .cont li .flag {
+	background-position: 0 -27px;
+}
+#layout-content .advice .search {
+	height: 22px;
+	margin-top: 17px;
+	padding-left: 12px;
+	padding-bottom: 3px;
+	background: url("../images/adviece_bg.png") no-repeat 285px -71px;
+}
+#layout-content .advice .search strong {
+	font-size: 12px;
+	line-height: 22px;
+	color: #595959;
+}
+#layout-content .advice .search input {
+	width: 176px;
+	height: 20px;
+	margin-left: 5px;
+	padding: 0 4px;
+	overflow: hidden;
+	font-size: 11px;
+	line-height: 20px;
+	color: #9c9c9c;
+	font-family: "Microsoft Yahei";
+	border: 1px solid #9c9c9c;	
+}
+
+
+#layout-content .idol {
+	height: 298px;
+}
+#layout-content .idol h3 {
+	height: 40px;
+	font-size: 12px;
+	font-family: "Microsoft Yahei";
+	line-height: 40px;
+	color: #010000;
+	position: relative;
+}
+#layout-content .idol h3 span {
+	color: #cc0d13;
+	margin-right: 5px;
+}
+#layout-content .idol h3 a {
+	position: absolute;
+	right: 0;
+}
+#layout-content .idol .list {
+	font-size: 0;
+}
+#layout-content .idol li {
+	width: 78px;
+	height: 78px;
+	margin-right: 2px;
+	margin-bottom: 2px;
+	display: inline-block;
+}
+#layout-content .idol .bigger {
+	width: 156px;
+}
+#layout-content .idol .small {
+	width: 77px;
+}
+
+
+#layout-content .help {
+	height: 248px;
+}
+#layout-content .help h3 {
+	height: 40px;
+	font-size: 12px;
+	font-family: "Microsoft Yahei";
+	line-height: 40px;
+	color: #010000;
+}
+#layout-content .help h3 span {
+	margin-right: 5px;
+	color: #cc0d13;
+}
+#layout-content .help .cont {
+	padding-right: 2px;
+}
+#layout-content .help .cont .top {
+	height: 91px;
+	padding: 0 16px 0 5px;
+}
+#layout-content .help .cont .top p {
+	margin-top: 12px;
+	margin-bottom: 10px;
+	text-indent: 2em;
+	font-size: 12px;
+	line-height: 18px;
+	font-family: "Microsoft Yahei";
+	color: #333333;
+}
+#layout-content .help .top .phone,  #layout-content .help .top .msn {
+	height: 18px;
+	font-size: 12px;
+	font-family: "arial";
+	line-height: 18px;
+	display: inline-block;
+}
+#layout-content .help .top .phone {
+	margin-left: 2px;
+	padding-left: 22px;
+	background: url("../images/help_bg.png") no-repeat 0 0;
+	color: #b80000;
+}
+#layout-content .help .top .msn {
+	margin-left: 44px;
+	padding-left: 24px;
+	background:  url("../images/help_bg.png") no-repeat 0 -18px;
+	color: #333333;
+} 
 
 
 
