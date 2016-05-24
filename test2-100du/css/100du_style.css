@@ -29,6 +29,7 @@ img {
 }
 .radius {
 	border-radius: 6px;
+	overflow: hidden;
 }
 .fl {
 	float: left;
@@ -131,11 +132,9 @@ img {
 #layout-aside {
 	width: 240px;
 }
-#layout-aside div {
+#layout-aside > div {
 	width: 238px;
-	height: 100px;
 	border: 1px solid #e5e5e5;
-	background-color: #e8f6f5;
 	margin-bottom: 10px;
 }
 
@@ -1052,17 +1051,17 @@ img {
 }
 
 
-#layout-content .help {
+#layout-content .help, #layout-content .media {
 	height: 248px;
 }
-#layout-content .help h3 {
+#layout-content .help h3, #layout-content .media h3 {
 	height: 40px;
 	font-size: 12px;
 	font-family: "Microsoft Yahei";
 	line-height: 40px;
 	color: #010000;
 }
-#layout-content .help h3 span {
+#layout-content .help h3 span, #layout-content .media h3 span {
 	margin-right: 5px;
 	color: #cc0d13;
 }
@@ -1072,9 +1071,10 @@ img {
 #layout-content .help .cont .top {
 	height: 91px;
 	padding: 0 16px 0 5px;
+	border-bottom: 1px solid #ededee;
 }
 #layout-content .help .cont .top p {
-	margin-top: 12px;
+	padding-top: 12px;
 	margin-bottom: 10px;
 	text-indent: 2em;
 	font-size: 12px;
@@ -1101,7 +1101,103 @@ img {
 	background:  url("../images/help_bg.png") no-repeat 0 -18px;
 	color: #333333;
 } 
+#layout-content .help .cont .bottom {
+	height: 116px;
+}
+#layout-content .help .cont .bottom .user, #layout-content .help .cont .bottom .comm {
+	height: 99px;
+	width: 133px;
+	padding-top: 17px;
+	font-size: 12px;
+	line-height: 18px;
+	font-family: "Microsoft Yahei";
+	color: #292929;
+	margin-left: 10px;
+	float: left;
+} 
+#layout-content .help .cont .bottom .user {
+	margin-right: 30px;
+}
+#layout-content .help .cont .bottom li {
+	padding-left: 12px;
+	color: #292929;
+	background: url("../images/list_bg.jpg") no-repeat 4px 7px;
+}
+#layout-content .help .cont .bottom li a {
+	font-size: 12px;
+	line-height: 18px;
+	font-family: "Microsoft Yahei";
+	color: #292929;	
+}
+#layout-content .help .cont .bottom li:hover a {
+	color: #d80000;
+}
+#layout-content .media h3 {
+	position: relative;
+}
+#layout-content .media h3 a {
+	position: absolute;
+	right: 0;
+}
+#layout-content .media ul {
+	margin-top: 15px;
+}
+#layout-content .media ul li {
+	height: 36px;
+	margin-bottom: 8px;
+	font-size: 12px;
+	color: #292929;
+	font-family: "Microsoft Yahei";
+	line-height: 18px;
+}
+#layout-content .media ul li img {
+	float: left;
+}
+#layout-content .media ul li span {
+	width: 220px;
+	margin-left: 7px;
+	float: left;
+} 
 
+
+
+#layout-aside .load {
+	height: 138px;
+}
+#layout-aside .load h3 {
+	height: 34px;
+	padding: 0 12px 0 12px;
+	font-size: 12px;
+	line-height: 34px;
+	font-family: "Microsoft Yahei";
+	color: #010000;
+	border-bottom: 1px solid #e5e5e5;
+}
+#layout-aside .load h3 span {
+	margin-right: 5px;
+	color: #cc0d13;
+}
+#layout-aside .load .cont {
+	padding-top: 20px;
+	font-size: 12px;
+	color: #595959;
+	font-family: "Microsoft Yahei";
+}
+#layout-aside .load .cont .fl {
+	margin-left: 9px;
+	margin-right: 6px;
+	width: 138px;
+}
+#layout-aside .load .cont .fl .password > span {
+	letter-spacing: 15px;
+}
+#layout-aside .load .cont .fl input {
+	width: 87px;
+	height: 17px;
+	margin-bottom: 7px;
+	border: 1px solid #e5e5e5;
+	background-color: #f7f7f7;
+}
 
 
 #layout-aside .asi_ad1 {
@@ -1113,4 +1209,33 @@ img {
 	width: 238px;
 	height: 178px;
 	overflow: hidden;
+}
+
+
+
+
+
+
+#layout-footer {
+	height: 64px;
+	padding-top: 14px;
+	font-size: 12px;
+	font-family: "Microsoft Yahei";
+	color: #919191;
+	line-height: 25px;
+	text-align: center;
+}
+#layout-footer a {
+	margin-left: 10px;
+	margin-right: 10px;
+	font-size: 12px;
+	font-family: "Microsoft Yahei";
+	line-height: 25px;
+	color: #454545;
+}
+#layout-footer a:hover {
+	text-decoration: underline;
+}
+#layout-footer span {
+	margin-left: 19px;
 }
