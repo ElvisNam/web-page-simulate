@@ -1,10 +1,10 @@
 /* CSS DOCUMENT OF 100DU */
 
 /* 重置 */
-body, div, nav, header, footer, ul, ol, li, aside, p, h3, h4 {
+body, div, nav, header, footer, ul, ol, li, aside, p, h3, h4, input {
 	margin: 0;
 }
-ul, ol, li {
+ul, ol, li, input {
 	padding: 0;
 }
 li {
@@ -89,6 +89,7 @@ img {
 	border: 1px solid #dbdbdb; 
 	margin-bottom: 10px;
 	position: relative;
+	overflow: visible;
 }
 #layout-section {
 	width: 960px;
@@ -317,11 +318,12 @@ img {
 	border: 1px solid #c40d0e;
 	border-radius: 5px;
 	background-color: #e21c01;
+	position: relative;
 }
 #layout-search .bar .list {
 	height: 25px;
 	margin-left: 226px;
-	margin-top: -27px;
+	top: -27px;
 	font-size: 0;
 	position: absolute;
 }
@@ -1178,26 +1180,189 @@ img {
 	color: #cc0d13;
 }
 #layout-aside .load .cont {
-	padding-top: 20px;
+	padding: 15px 12px 0 12px;
 	font-size: 12px;
-	color: #595959;
 	font-family: "Microsoft Yahei";
+	line-height: 1;
 }
-#layout-aside .load .cont .fl {
-	margin-left: 9px;
-	margin-right: 6px;
+#layout-aside .load .log-wrap {
+	height: 45px;
+	padding-left: 9px;
+	padding-bottom: 9px;
+	border-bottom: 1px solid #f2f2f2;
+}
+#layout-aside .load .log-wrap .fl {
 	width: 138px;
+	margin-right: 6px;
 }
-#layout-aside .load .cont .fl .password > span {
-	letter-spacing: 15px;
-}
-#layout-aside .load .cont .fl input {
-	width: 87px;
-	height: 17px;
+#layout-aside .load .log-wrap .fl label {
 	margin-bottom: 7px;
+	display: inline-block;
+	color: #595959;
+}
+#layout-aside .load .log-wrap .fl label span {
+	float: left;
+	width: 49px;
+	word-spacing: 7px;
+}
+#layout-aside .load .log-wrap .fl input {
+	width: 87px;
 	border: 1px solid #e5e5e5;
 	background-color: #f7f7f7;
 }
+#layout-aside .load .log-wrap .fr {
+	width: 61px;
+}
+#layout-aside .load .log-wrap .fr label:first-of-type {
+	height: 19px;
+	margin-bottom: 4px;
+	display: inline-block;
+	color: #595959;
+}
+#layout-aside .load .log-wrap .fr input[type = "checkbox"] {
+	width: 10px;
+	height: 10px;
+	margin-left: 1px;
+	margin-right: 4px;
+	border: 1px solid #e9e7e3;
+	background-color: #fff;
+	display: inline-block;
+}
+#layout-aside .load .log-wrap .fr input[type = "submit"] {
+	position: absolute;
+	left: -2000px;
+}
+#layout-aside .load .log-wrap .fr .submit {
+	height: 20px;
+	width: 54px;
+	line-height: 20px;
+	font-size: 12px;
+	color: #fff;
+	text-align: center;
+	border-radius: 5px;
+	background: linear-gradient(#f20000, #c90000);
+	box-shadow: 2px 2px 2px #b9b9b9;
+	display: inline-block;	
+}
+#layout-aside .load .menu {
+	padding-top: 10px;
+	line-height: 1;
+}
+#layout-aside .load .menu span {
+	width: 50%;
+	float: left;
+	text-align: center;
+}
+#layout-aside .load .menu span a {
+	padding-left: 6px;
+	font-size: 12px;
+	font-family: "Microsoft Yahei";
+	line-height: 1;
+	color: #666666;
+	background: url("../images/list_bg.jpg") no-repeat 0 5px;
+	display: inline-block;
+}
+#layout-aside .load .menu span a:hover {
+	text-decoration: underline;
+}
+
+
+#layout-aside .coupons {
+	height: 238px;
+	width: 214px;
+	padding: 0 12px;
+}
+#layout-aside .coupons h3 {
+	height: 40px;
+	font-size: 12px;
+	color: #010000;
+	font-family: "Microsoft Yahei";
+	line-height: 40px;
+	position: relative;
+}
+#layout-aside .coupons h3 span {
+	color: #cc0d13;
+	margin-right: 5px;
+}
+#layout-aside .coupons h3 .more {
+	position: absolute;
+	right: 0;
+}
+#layout-aside .coupons .aside_tab .tab_list {
+	height: 23px;
+	padding-left: 6px;
+	border-bottom: 1px solid #dadada;
+	font-size: 0;
+}
+#layout-aside .coupons .tab_list li {
+	height: 22px;
+	width: 66px;
+	border-top: 1px solid #dadada;
+	border-left: 1px solid #dadada;
+	font-size: 12px;
+	line-height: 22px;
+	font-family: "Microsoft Yahei";
+	color: #666666;
+	text-align: center;
+	display: inline-block;
+	background: linear-gradient(#f3f3f3 0, #fff 11px);
+	border-radius: 4px 4px 0 0;
+}
+#layout-aside .coupons .tab_list .active {
+	background: #fff;
+	height: 23px;
+}
+#layout-aside .coupons .tab_list li .trangle {
+	margin: 10px 0 0 6px;
+	border-top: 4px solid #a19b9b;
+	display: inline-block;
+}
+#layout-aside .coupons .tab_list .active .trangle {
+	border-top-color: #ca0309;
+}
+#layout-aside .coupons .cont li {
+	height: 27px;
+	font-size: 12px;
+	font-family: "Microsoft Yahei";
+	line-height: 27px;
+	border-top: 1px dotted #cbcbca;
+}
+#layout-aside .coupons .cont .th {
+	height: 30px;
+	line-height: 30px;
+	border-top: 0;
+}
+#layout-aside .coupons .cont .tit {
+	width: 50%;
+	text-align: center;
+	color: #333333;
+	float: left;	
+}
+#layout-aside .coupons .cont .save {
+	width: 25%;
+	text-align: center;
+	color: #d80000;
+	float: left;	
+}
+#layout-aside .coupons .cont .price {
+	width: 25%;
+	text-align: center;
+	color: #999999;
+	float: left;	
+}
+#layout-aside .coupons .cont .th span {
+	color: #999999;
+}
+#layout-aside .coupons .tab_list li:last-of-type {
+	border-right: 1px solid #dadada;
+}
+#layout-aside .coupons .cont li a:hover .tit {
+	color: #d80000;
+}
+
+
+
+
 
 
 #layout-aside .asi_ad1 {
